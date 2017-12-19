@@ -30,12 +30,12 @@ var doc = new jsPDF();
 var qrcode_prv = new QRCode(document.getElementById("qrcode_prv"), {
 	width : 300,//49,
 	height : 300,
-	correctLevel: QRCode.CorrectLevel.M
+	correctLevel: QRCode.CorrectLevel.H
 });
 var qrcode_pub = new QRCode(document.getElementById("qrcode_pub"), {
 	width : 300,//29,
 	height : 300,
-	correctLevel: QRCode.CorrectLevel.H
+	correctLevel: QRCode.CorrectLevel.L
 });
 
 function makeCode () {		
